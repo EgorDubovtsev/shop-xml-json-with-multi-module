@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<simpleShop>
+    <categories>
+        <name>TEST</name>
+        <subcategories>
+            <name>TEST1</name>
+            <products test="Attribute value3">
+                <maker>TEST</maker>
+                <model>TEST</model>
+                <creationDate>21-04-2006</creationDate>
+                <price>2000.5</price>
+                <isInStock>true</isInStock>
+                <color>BLACK</color>
+            </products>
+        </subcategories>
+        <subcategories>
+            <name>TEST2</name>
+            <products test="TEST value2">
+                <maker>TEST3</maker>
+                <model>jf555</model>
+                <creationDate>21-04-2006</creationDate>
+                <price>2000.5</price>
+                <isInStock>false</isInStock>
+                <color>BLACK</color>
+            </products>
+        </subcategories>
+    </categories>
+    <categories>
+        <name>test</name>
+        <subcategories>
+            <name>racing test</name>
+            <products test="test value">
+                <maker>test</maker>
+                <model>aa111</model>
+                <creationDate>21-04-2006</creationDate>
+                <price>2000.5</price>
+                <isInStock>true</isInStock>
+                <color>BLACK</color>
+            </products>
+        </subcategories>
+        <subcategories>
+            <name>truck test</name>
+            <products test="test value4">
+                <maker>test</maker>
+                <model>ab212</model>
+                <creationDate>14-01-2002</creationDate>
+                <price>4000.0</price>
+                <isInStock>false</isInStock>
+                <color>RED</color>
+            </products>
+        </subcategories>
+    </categories>
+</simpleShop>

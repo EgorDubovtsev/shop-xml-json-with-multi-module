@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>parent-separated-shop</artifactId>
+    <groupId>org.example</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>impl-api-shop-parser</artifactId>
+  <build>
+    <resources>
+      <resource>
+        <directory>${resourcePath}</directory>
+        <includes>
+          <include>application.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+  <profiles>
+    <profile>
+      <id>prod</id>
+      <properties>
+        <resoursePath>src/main/resources</resoursePath>
+      </properties>
+    </profile>
+    <profile>
+      <id>qa</id>
+      <dependencies>
+        <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
+      <properties>
+        <resourcePath>src/main/testResources</resourcePath>
+      </properties>
+    </profile>
+  </profiles>
+</project>
